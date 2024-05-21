@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+
+    <style>
+        body {
+            background-image: url("{% static 'images/books.jpg' %}");
+            background-size: cover;
+            background-color: black; /* fallback color in case the image is not available */
+            color: white; /* text color */
+        }
+        h1 {
+            text-align: center; /* center the heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <a href="{% url 'display' %}" class="left-button">
+            <button type="button">Display</button>
+        </a>
+        <h1>Welcome to the Guest Book App</h1>
+        <a href="{%url 'add'%}" class="right-button">
+            <button type="button">Feedback</button>
+        </a>
+    </div>
+</body>
+</html>

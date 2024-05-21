@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submitted</title>
+    {% load static %}
+    <style>
+        body {
+            background-image: url("{% static 'images/books.jpg' %}");
+            color: white; /* text color */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+           
+        }
+        center button{
+            background-color: black;
+            color:white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback form submitted successfully</h1><br>
+    <center>
+        <a href="{% url 'index' %}">
+            <button type="button">Back to home</button>
+        </a>
+    </center>
+</body>
+</html>

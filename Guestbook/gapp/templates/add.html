@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback details form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body{
+            background-image: url("{% static 'images/feeds.jpg' %}");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="design">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="but">Submit</button>
+    </form>
+</div>
+</body>
+</html>
