@@ -1,0 +1,54 @@
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-button button, .right-button button {
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-button {
+    margin-right: auto; /* Pushes the left button to the left edge */
+}
+
+.right-button {
+    margin-left: auto; /* Pushes the right button to the right edge */
+}
+
+.design{
+    padding: 70px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(190, 163, 74, 0.904);
+    border: 2px solid black;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+.textarea {
+    width: 300px; /* Set the width of the textarea */
+    height: 150px; /* Set the height of the textarea */
+    padding: 8px; /* Add padding inside the textarea */
+    font-size: 16px; /* Set the font size */
+    resize: vertical; /* Allow vertical resizing */
+} 
+.des {
+    margin:auto;
+    padding: 5px;
+}
+.but{
+    display: block;
+    margin: 20px auto 20px;
+}
